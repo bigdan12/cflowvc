@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<H1>A demo page used to display audio samples </H1>
+</head>
+<body>
+<table border="1" width="2130" cellspacing="0">
+<H3>😊 Listen To test-noise to VCTK:</H3>
+<tr bgcolor="gray" style="color:white;">
+<th></th>
+<th>source</th>
+<th>target</th>
+<th>diff-hierVC</th>
+<th>diffvc</th>
+<th>StarGANv2-VC</th>
+<th>freevc</th>
+<th>proposed</th>
+</tr>
+<tr>
+<td>toF</td>
+<td rowspan="6">
+<audio controls>
+<source src="./src/1580_141083_000003_000000-au01.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./tgt/p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/1580_141083_000003_000000-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/1580_141083_000003_000000-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/1580_141083_000003_000000-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/1580_141083_000003_000000-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/1580_141083_000003_000000-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/1580_141083_000003_000000-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/1580_141083_000003_000000-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/1580_141083_000003_000000-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/1580_141083_000003_000000-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/1580_141083_000003_000000-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/1580_141083_000003_000000-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/1580_141083_000003_000000-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/1580_141083_000003_000000-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/1580_141083_000003_000000-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/1580_141083_000003_000000-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/1580_141083_000003_000000-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/1580_141083_000003_000000-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/1580_141083_000003_000000-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/1580_141083_000003_000000-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/1580_141083_000003_000000-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/1580_141083_000003_000000-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/1580_141083_000003_000000-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/1580_141083_000003_000000-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/1580_141083_000003_000000-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/1580_141083_000003_000000-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/1580_141083_000003_000000-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/1580_141083_000003_000000-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/1580_141083_000003_000000-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/1580_141083_000003_000000-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/1580_141083_000003_000000-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+<td rowspan="6">
+<audio controls>
+<source src="./src/3570_5694_000008_000009-au01.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./tgt/p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/3570_5694_000008_000009-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/3570_5694_000008_000009-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/3570_5694_000008_000009-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/3570_5694_000008_000009-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/3570_5694_000008_000009-au01-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/3570_5694_000008_000009-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/3570_5694_000008_000009-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/3570_5694_000008_000009-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/3570_5694_000008_000009-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/3570_5694_000008_000009-au01-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/3570_5694_000008_000009-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/3570_5694_000008_000009-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/3570_5694_000008_000009-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/3570_5694_000008_000009-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/3570_5694_000008_000009-au01-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/3570_5694_000008_000009-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/3570_5694_000008_000009-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/3570_5694_000008_000009-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/3570_5694_000008_000009-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/3570_5694_000008_000009-au01-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/3570_5694_000008_000009-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/3570_5694_000008_000009-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/3570_5694_000008_000009-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/3570_5694_000008_000009-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/3570_5694_000008_000009-au01-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/3570_5694_000008_000009-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/3570_5694_000008_000009-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/3570_5694_000008_000009-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/3570_5694_000008_000009-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/3570_5694_000008_000009-au01-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+<td rowspan="6">
+<audio controls>
+<source src="./src/5639_40744_000015_000000-au02.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./tgt/p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/5639_40744_000015_000000-au02-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/5639_40744_000015_000000-au02-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/5639_40744_000015_000000-au02-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/5639_40744_000015_000000-au02-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/5639_40744_000015_000000-au02-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/5639_40744_000015_000000-au02-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/5639_40744_000015_000000-au02-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/5639_40744_000015_000000-au02-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/5639_40744_000015_000000-au02-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/5639_40744_000015_000000-au02-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/5639_40744_000015_000000-au02-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/5639_40744_000015_000000-au02-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/5639_40744_000015_000000-au02-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/5639_40744_000015_000000-au02-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/5639_40744_000015_000000-au02-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/5639_40744_000015_000000-au02-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/5639_40744_000015_000000-au02-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/5639_40744_000015_000000-au02-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/5639_40744_000015_000000-au02-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/5639_40744_000015_000000-au02-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/5639_40744_000015_000000-au02-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/5639_40744_000015_000000-au02-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/5639_40744_000015_000000-au02-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/5639_40744_000015_000000-au02-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/5639_40744_000015_000000-au02-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/5639_40744_000015_000000-au02-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/5639_40744_000015_000000-au02-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/5639_40744_000015_000000-au02-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/5639_40744_000015_000000-au02-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/5639_40744_000015_000000-au02-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+<td rowspan="6">
+<audio controls>
+<source src="./src/8224_274384_000001_000001-au05.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./tgt/p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/8224_274384_000001_000001-au05-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/8224_274384_000001_000001-au05-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/8224_274384_000001_000001-au05-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/8224_274384_000001_000001-au05-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/8224_274384_000001_000001-au05-p230_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/8224_274384_000001_000001-au05-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/8224_274384_000001_000001-au05-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/8224_274384_000001_000001-au05-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/8224_274384_000001_000001-au05-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/8224_274384_000001_000001-au05-p258_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/8224_274384_000001_000001-au05-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/8224_274384_000001_000001-au05-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/8224_274384_000001_000001-au05-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/8224_274384_000001_000001-au05-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/8224_274384_000001_000001-au05-p233_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/8224_274384_000001_000001-au05-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/8224_274384_000001_000001-au05-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/8224_274384_000001_000001-au05-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/8224_274384_000001_000001-au05-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/8224_274384_000001_000001-au05-p254_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toF</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/8224_274384_000001_000001-au05-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/8224_274384_000001_000001-au05-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/8224_274384_000001_000001-au05-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/8224_274384_000001_000001-au05-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/8224_274384_000001_000001-au05-p236_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+<tr>
+<td>toM</td>
+
+<td>
+<audio controls>
+<source src="./tgt/p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diff-hierVC/8224_274384_000001_000001-au05-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./diffvc/8224_274384_000001_000001-au05-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./StarGANv2-VC/8224_274384_000001_000001-au05-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./freevc/8224_274384_000001_000001-au05-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+<td>
+<audio controls>
+<source src="./proposed/8224_274384_000001_000001-au05-p259_023.wav" type="audio/wav">
+</audio>
+</td>
+</tr>
+</table>
+</body>
+</html>
